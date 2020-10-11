@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SecondActivity">
 
     <TextView
@@ -44,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="71dp"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/source_sans_pro"
         android:text="Ваша фамилия"
         android:textColor="@color/black"
@@ -52,21 +53,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/source_sans_pro"
         android:text="Номер машины"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/qrBtn"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_marginBottom="80dp"
@@ -74,9 +79,65 @@
         android:textColor="@color/white"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="20sp"
+        android:textAllCaps="false"
         android:text="Продолжить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Алексей"
+        android:inputType="textPersonName"
+
+
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Самойлов"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="В533ОМ"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/qrBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
