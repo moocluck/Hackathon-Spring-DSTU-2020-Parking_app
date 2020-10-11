@@ -27,6 +27,7 @@ public class SecondActivity extends AppCompatActivity {
                 int lName = (editTextTextPersonName2.getText() == null)?0:Integer.parseInt(editTextTextPersonName2.getText().toString());
                 int carNumber = (editTextTextPersonName3.getText() == null)?0:Integer.parseInt(editTextTextPersonName3.getText().toString());
 
+
                 Intent intent = new Intent (SecondActivity.this, Qr_scanner.class);
                 startActivity(intent);
             }
